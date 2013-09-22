@@ -1,0 +1,106 @@
+.hub {
+    border: 1px solid #eee;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    padding: 10px;
+    overflow: hidden;
+}
+
+.hub ul {
+    list-style-type: none !important;
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.hub li {
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.hub-slides {
+    float: left;
+    width: 70%;
+    max-width: 640px;
+}
+
+.hub-slides li {
+    display: none;
+}
+.hub-slides li.active {
+    display: block;
+}
+
+.hub-slides a {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0;
+}
+
+.hub-slides img {
+    height: 340px;
+    width: 640px;
+}
+
+.hub-titles {
+    float: right;
+    width: 29%;
+    max-width: 285px;
+    display: table;
+}
+
+.hub-titles li {
+    display: table-row;
+    height: 68px;
+    color: #444;
+}
+
+.hub-titles li span {
+    font-size: 1.1em;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.hub-titles li:hover {
+    color: #222;
+    background-color: #fafafa;
+}
+
+.hub-titles li.active {
+    color: #000;
+    background-color: #f0f0f0;
+}
+
+.hub-titles:before {
+    content: url(../img/arrow.png);
+    position: absolute;
+    z-index: 100;
+    margin-left: -70px;
+    display: none;
+}
+
+.hub-titles.item-1:before {
+    margin-top: 0px;
+    display: inherit;
+}
+
+.hub-titles.item-2:before {
+    margin-top: 68px;
+    display: inherit;
+}
+
+.hub-titles.item-3:before {
+    margin-top: 136px;
+    display: inherit;
+}
+
+.hub-titles.item-4:before {
+    margin-top: 204px;
+    display: inherit;
+}
+
+.hub-titles.item-5:before {
+    margin-top: 272px;
+    display: inherit;
+}

@@ -1,0 +1,7 @@
+#hub_image {
+    max-width: 400px;
+    padding: 2px;
+    border: 1px solid #eee;
+    margin: 5px;
+    cursor: pointer;
+}
