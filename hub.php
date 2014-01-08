@@ -148,9 +148,9 @@ function hub_shortcode($attrs) {
 <div class="hub">
     <ul class="hub-slides">';
     
-    $posts = new WP_Query( 'meta_key=_hub_image' );
+    $posts = new WP_Query( 'meta_key=_hub_image&posts_per_page=-1' );
     $posts = $posts->posts;
-    $pages = new WP_Query( 'meta_key=_hub_image&post_type=page' );
+    $pages = new WP_Query( 'meta_key=_hub_image&post_type=page&posts_per_page=-1' );
     $pages = $pages->posts;
     foreach( array_merge($posts,$pages) as $post) {
         $id = $post->ID;
